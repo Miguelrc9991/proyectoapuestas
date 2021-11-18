@@ -1,0 +1,22 @@
+
+<table class="table table-striped">
+   <th><a class="btn btn-outline-info" [routerLink]="['/detalles']">Volver</a></th>
+    <thead>
+        <th>Nombre</th>
+        <th>Imagen</th>
+        <th>Detalles</th>
+
+    </thead>
+<tbody>
+    
+    <tr *ngFor="let jug of jugadores" >
+        <td>{{jug.nombre}}</td>
+        <td><img style="height: 50px; width: 50px;" src={{jug.imagen}}></td>
+      
+        
+            <td><a class="btn btn-outline-info" [routerLink]="['/detallesjugador',jug.idJugador]">Detalles</a></td>
+
+          
+    </tr>
+</tbody>
+</table>    

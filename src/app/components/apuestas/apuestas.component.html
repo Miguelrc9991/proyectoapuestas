@@ -1,0 +1,25 @@
+<button class="btn btn-danger" [routerLink]="['/napuesta']">Realizar apuesta</button>
+<h1 style="color: red;">Local: Real Madrid, Visitante: Atlético de Mdrid</h1>
+<div *ngIf="apuestas">
+    <table class="table table-striped">
+       
+         <thead>
+             <th>Usuario</th>
+             <th>Resultado</th>
+             <th>Fecha</th>
+     
+         </thead>
+     <tbody>
+         
+         <tr *ngFor="let apu of apuestas" >
+             <td>{{apu.usuario}}</td>
+             <td>{{apu.resultado}}</td>
+             <td>{{apu.fecha}}</td>
+
+     
+               
+         </tr>
+     </tbody>
+     </table>    
+    
+</div>

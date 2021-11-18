@@ -1,0 +1,10 @@
+<div *ngIf="jugador">
+<h1>{{jugador.nombre}}</h1>
+<img style="height: 200px; width: 125px;" src={{jugador.imagen}}>
+<h2>Fecha de nacimiento: {{jugador.fechaNacimiento}}</h2>
+<h3>{{jugador.pais}}</h3>
+<button class="btn btn-outline-info"[routerLink]="['/jugadores/',jugador.idEquipo]" >
+    Jugadores
+  </button>
+
+</div>

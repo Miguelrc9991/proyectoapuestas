@@ -1,0 +1,19 @@
+<h1>Nuevo departamento</h1>
+<form #formApuestas="ngForm">
+    <label>Usuario: </label>
+    <input type="text" class="form-control"
+        #cajaUsuario name="cajaUsuario"/><br/>
+    <label>Real Madrid: </label>
+    <input type="text" class="form-control"
+        #cajaE1 name="cajaE1"/><br/>
+    <label>Atlético de Madrid: </label>
+    <input type="text" class="form-control"
+         #cajaE2 name="cajaE2"/><br/>
+    <label>Fecha: </label>
+    <input type="text" class="form-control"
+         #cajaFecha name="cajaFecha"/><br/> 
+    <button class="btn btn-dark"
+        (click)="insertarApuesta()">
+        Insertar departamento
+    </button>
+</form>

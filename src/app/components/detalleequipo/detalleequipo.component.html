@@ -1,0 +1,12 @@
+<div class="card" style="text-align: center; float:left" *ngIf="equipo"
+ >
+    <img src="{{equipo.imagen}}" class="card-img-top" alt="nose"
+    title="titulo" style="height: 300px; width: 300px;" >
+    <div class="card-body">
+      <h5 class="card-title">Champions: {{equipo.champions}}</h5>
+      <p class="card-text">{{equipo.descripcion}}</p>
+        <button class="btn btn-outline-info"[routerLink]="['/jugadores/',equipo.idEquipo]" >
+          Jugadores
+        </button>
+    </div>
+</div>
